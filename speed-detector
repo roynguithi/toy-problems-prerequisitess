@@ -1,0 +1,16 @@
+function speed-detector(speed){
+    const speedlimit=70;
+    const distanceperdemeritpoint=5;
+
+    if(speed<speedlimit){
+        console.log("Ok");
+    }else{
+        const demeritpoint =math.floor((speed-speedlimit)/distanceperdemeritpoint);
+        if(demeritpoint>12){
+            console.log("License suspended");
+        }else{
+            console.log('points:${demeritpoints}');
+        }
+
+    }
+}
